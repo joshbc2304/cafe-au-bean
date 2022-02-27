@@ -2,7 +2,7 @@ from tkinter import * #imports all from tkinter
 from tkinter import messagebox#Imports tkinter messagebox
 import tkinter as tk#imports tkinter as "tk" to be used throughout code
 
-def calc(self): #defines the function "calc" 
+def calc(): #defines the function "calc" 
     if (str(quantity.get()).isnumeric() == True and str(quantity2.get()).isnumeric() == True and str(quantity3.get()).isnumeric() == True and str(quantity4.get()).isnumeric() == True): #if the quantity in the spinbox contains letters it will return true allowing the function to continue
         global totaldrink,totaldrink2,totaldrink3,totaldrink4,dailytotal #declares global variables to be used everywhere throughout function
         totaldrink = int(quantity.get()) + totaldrink #creates variable that stores the amount of drinks sold for the duration of the program running unless reset
